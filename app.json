@@ -1,0 +1,18 @@
+{
+  "name": "Heroku / Galvanize Workshop",
+  "scripts": {
+    "postdeploy": "yarn run seed"
+  },
+  "env": {
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "environments": {
+    "test": {
+      "addons":[
+        "heroku-postgresql:hobby-dev"
+      ]
+    }
+  }
+}

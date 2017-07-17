@@ -1,0 +1,37 @@
+{
+  "name": "heroku-workshop",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run",
+    "start": "node ./bin/www",
+    "pretest": "knex migrate:latest --env=test",
+    "test": "NODE_ENV=test mocha --recursive test"
+  },
+  "engines": {
+    "node": "7.6"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "dotenv": "^4.0.0",
+    "express": "~4.14.0",
+    "jade": "~1.11.0",
+    "knex": "^0.13.0",
+    "moment": "^2.18.1",
+    "morgan": "~1.7.0",
+    "newrelic": "^1.40.0",
+    "pg": "^6.3.1",
+    "pug": "^2.0.0-rc.2",
+    "sendgrid": "^5.1.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "artillery": "^1.6.0-2",
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.4.2"
+  }
+}
