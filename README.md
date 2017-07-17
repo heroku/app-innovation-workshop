@@ -6,7 +6,10 @@
 - Fork the Github repo
 - Create the Cloud9 Repo
 - Run these commands
+  ```
   sh script/setup.sh && . ~/.profile
+  ```
+
   
 # Deploy to Heroku
 From the command-line in Cloud9 run the following commands:
