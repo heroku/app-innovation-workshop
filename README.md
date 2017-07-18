@@ -1,6 +1,6 @@
-# app-innovation-workshop
+# App-Innovation-Workshop - Exercises
 
-# Setup on Cloud9
+# 1 - Setup on Cloud9
 - Create a Cloud9 Account
 - On Cloud9 Connect Github
 - Fork the Github repo
@@ -11,7 +11,7 @@
   ```
 
   
-# Deploy to Heroku
+# 2 - Deploy to Heroku
 From the command-line in Cloud9 run the following commands:
 ```
 heroku login
@@ -22,7 +22,7 @@ heroku run yarn run seed
 ```
 Open your Heroku app and you should see the app running
 
-# Monitoring: Exercise
+# 3 - Monitoring: Exercise
 ## Offense
 You are a hacker. You live in eastern hackistan. You have a contract with EvilCorp to take down a site that competes with them. Your mission is to take down WellCo!
 The discovery phase of your attack has already been completed. A colleague of yours has identified several HTTP endpoints that seem to have weaknesses:
@@ -58,7 +58,7 @@ After you have successfully attacked and defended an end-point, switch roles! We
 Pick a different endpoint, and work your way through until you can identify the signature of each attack, using Logplex and NewRelic.
 Happy hacking!
 
-# Scaling
+# 4 - Scaling
 
 - https://devcenter.heroku.com/articles/scaling
 - https://devcenter.heroku.com/articles/node-concurrency
@@ -72,7 +72,7 @@ Happy hacking!
 
 Don't forget to scale down at the end of the day!
 
-# Logging
+# 5 - Logging
 - https://devcenter.heroku.com/articles/papertrail
 - https://devcenter.heroku.com/articles/logentries
 Hit one of the error endpoints, setup triggers, and watch what happens in the log aggregators!
@@ -140,6 +140,22 @@ And that's a real-life review-app -> CI -> CD scenario!
 - Merge pr-3-task-create-works into master (this fixes it)
 - You'll see that staging gets auto-deployed
 
+# Integrating with Sendgrid
+
+Sendgrid is a 3rd-Party Service that's integrated with Heroku.  Getting setup with Sendgrid couldn't be easier:
+
+- Add the Sendgrid addon
+
+  ```
+  heroku addons:create sendgrid:starter
+  ```
+
+- Login to Sendgrid
+- Create an api key at https://app.sendgrid.com/settings/api_keys
+- Set it on your app with `heroku config:set SENDGRID_API_KEY="..."`
+- Set the `FROM_EMAIL` environment variable `heroku config:set FROM_EMAIL="..."`
+- Create a task in your app
+-
 
 
 
