@@ -2,10 +2,12 @@
 
 # 1 - Setup on Cloud9
 - Create a Cloud9 Account
-- On Cloud9 Connect Github
-- Fork the Github repo
-- Create the Cloud9 Repo
-- Run these commands
+- Fork the Github repo (https://github.com/heroku/app-innovation-workshop) to your github account.
+- On Cloud9 console clone the repo e.g. if you are cloning from heroku/app-innovation-workshop you will use the following command:
+```
+git clone https://github.com/heroku/app-innovation-workshop
+```
+- Once the cloud9 repo is created, Run this command:
   ```
   sh script/setup.sh && . ~/.profile
   ```
