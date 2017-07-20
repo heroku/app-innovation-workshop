@@ -11,7 +11,7 @@
 ## Setup CI
 
 - Click on "Tests"
-- Click on "Connect to Github"
+- Click on "Connect to Github" (need to fork the repo)
 - Search for heroku-workshop
 - Click "Connect"
 - Click "Enable Heroku CI"
