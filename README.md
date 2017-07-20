@@ -17,7 +17,7 @@ git clone https://github.com/heroku/app-innovation-workshop
 From the command-line in Cloud9 run the following commands:
 ```
 heroku login
-heroku apps:create --org=heroku-innovation-workshop
+heroku apps:create
 heroku addons:create heroku-postgresql:hobby-dev
 git push heroku master
 heroku run yarn run seed
