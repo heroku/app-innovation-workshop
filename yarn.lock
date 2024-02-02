@@ -1432,6 +1432,7 @@ jade@~1.11.0:
     jstransformer "0.0.2"
     mkdirp "~0.5.0"
     transformers "2.1.0"
+    uglify-js "^2.4.19"
     void-elements "~2.0.1"
     with "~4.0.0"
 
@@ -2404,9 +2405,10 @@ sendgrid-rest@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/sendgrid-rest/-/sendgrid-rest-2.3.0.tgz#662ef95a93c73c3e0a4e7a61e3880a10c78dd24a"
 
-sendgrid@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/sendgrid/-/sendgrid-5.1.1.tgz#d4b2b6921aceb5e0c8e1ec5e032617fffb598721"
+sendgrid@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/sendgrid/-/sendgrid-5.2.3.tgz#37cd28ddd93fca2d3fa7dda10a323b1f43ffecfc"
+  integrity sha512-FD7oR9TbJFUew1p0Vw9JX0wBetDyq634LzylSXz4n9+hwaf+6a9dNloZl8CcjpsX4NuEc3HJanTN4GjDwNyi4A==
   dependencies:
     async.ensureasync "^0.5.2"
     async.queue "^0.5.2"
